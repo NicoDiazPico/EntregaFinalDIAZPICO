@@ -1,0 +1,52 @@
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+    &__form{
+    width: 80%;
+    background-color: $color-tarjetas;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+        &__label{
+        display: block;
+        padding: 10px 5px;
+        text-align: center;
+        }
+    }
+}
+.contacto__form:hover{
+  transition: 1s;
+  box-shadow: $shadow;
+}
+
+.contacto__form__area{
+  display: flex;
+  
+  margin: 0 auto;
+  width: 80%;
+  background-color: $color-fondo;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $color-font;
+  border-radius: 4px;
+}
+
+.botonEnviar{
+  width: 8rem;
+  height: 2rem;
+}
+
+
+//For > 420px
+
+@media screen and (min-width: 420px) {
+
+.contacto__form {
+  width: 80%;
+  max-width: 500px;
+  }
+}

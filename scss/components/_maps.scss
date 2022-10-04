@@ -1,0 +1,10 @@
+.conteiner__maps {
+  height: 450px;
+  margin: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+    &__ancho {
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+//Tarjetas para la page INDEX
+.article__products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  & :hover{
+    transition: 1s;
+    box-shadow: $shadow;
+  }
+}
+
+@mixin cardcover{
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  height: 200px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+    & :hover{
+    transition: 1s;
+    background-color:whitesmoke;
+  }
+}
+
+.article__text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color:rgba(245, 245, 245, 0.464);
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px #f6f6f6;
+    & a{
+    text-decoration: none;
+    color:$color-font;
+  }
+}
+
+
+//for >420 px
+
+@media screen and (min-width: 420px){
+
+.article__products {
+  font-weight: 400;
+  margin-top: 20px;
+}
+}
+
+@mixin cardcover420{
+  display: flex;
+  border-radius: 16px;
+  height: 48vh;
+  min-height: 320px;
+  max-height: 400px;
+  width: 40vw;
+  min-width: 200px;
+  max-width: 320px;
+  margin: 16px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  &:hover{
+    transition: 1s;
+    box-shadow:$shadow;
+  }
+}
+
+
+//For pages 2 and 3
+
+@mixin cardproduct {
+.article__shirts {
+  border-radius: 8px;
+  height: 35vh;
+  width: 40%;
+  background-color:$color-tarjetas;
+  margin: 8px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: hidden;
+    &:hover{
+    transition: 1s;
+    box-shadow: $shadow;
+    } 
+  }  
+
+.article__shirts img{
+  object-fit: cover;
+  object-position: center;
+  height: 75%;
+  width: 100%;
+  }
+
+.article__shirts h3{
+  font-size: medium;
+  text-decoration: none;
+  color: $color-font;
+  font-weight: 600;
+}
+
+.article__shirts a{
+  text-decoration: none;
+  color: $color-font;
+}
+
+.article__shirts p {
+  font-size: small;
+  text-decoration: none;
+  color: $color-font;
+}
+}
+
+
+//For > 420px
+
+@mixin cardproduct420 {
+.article__shirts {
+  height: 60vh;
+  width: 40vw;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 15px;
+  & img {
+    height: 80%;
+    width: 100%;
+    }
+  }
+}

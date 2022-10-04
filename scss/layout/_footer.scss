@@ -1,0 +1,38 @@
+//Footer mobile
+
+.footer {
+  background-color:$color-font;
+    &__list {
+    list-style: none;
+    font-size: 1em;
+    font-weight: 400;
+      a {
+      color:$color-tarjetas;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer__avisoslegales {
+  color:$color-tarjetas
+}
+
+.footer__textoLegales {
+  font-size: 0.7em;
+  font-weight: 100;
+  color:$color-tarjetas;
+}
+
+
+//Footer > 420px
+
+@media screen and (min-width:420px) {
+
+.footer {
+  display: flex;
+  justify-content: center;
+    &__list {
+    width: 55%;
+  }
+}
+}

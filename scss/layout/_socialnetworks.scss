@@ -1,0 +1,31 @@
+//For mobile
+.socialNetworks__conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 32px;
+  background-color:$color-azul;
+  margin-top: 10px;
+    & a{
+    color:$color-tarjetas;
+    text-decoration: none;
+  }
+}
+
+.socialNetworks__conteiner li{
+  list-style: none;
+}
+
+//For > 420px
+@media screen and (min-width: 420px) {
+
+.socialNetworks__conteiner{
+  height: 40px;
+  justify-content: center;
+  gap: 2rem;
+  & a{
+    font-weight: 400;
+    color: black;
+  }
+}
+}

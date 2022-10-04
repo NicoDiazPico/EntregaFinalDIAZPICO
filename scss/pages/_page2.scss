@@ -1,0 +1,16 @@
+.shirts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 16px;
+}
+
+@include cardproduct;
+
+@include botonshowroom;
+
+@media screen and (min-width: 420px){
+  @include cardproduct420;
+}
