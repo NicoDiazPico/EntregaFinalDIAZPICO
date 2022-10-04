@@ -1,16 +1,16 @@
 .article__remeras {
   @include cardcover;
-  background-image: url(../../assets/1remeraPortada.jpg);
+  background-image: url(../assets/remerablanca1.jpg);
 }
 
 .article__pantalones {
   @include cardcover;
-  background-image: url(../../assets/1pantalonPortada.jpg);
+  background-image: url(../assets/pantalonmarron1.jpeg);
 }
 
 .article__accesorios {
   @include cardcover;
-  background-image: url(../../assets/1accesoriosPortada.jpg);
+  background-image: url(../assets/buzo1.jpg);
 }
 
 
@@ -18,16 +18,16 @@
 
   .article__remeras {
     @include cardcover420;
-    background-image: url(../../assets/1remeraPortada.jpg);
+    background-image: url(../assets/remerablanca1.jpg);
   }
   
   .article__pantalones {
     @include cardcover420;
-    background-image: url(../../assets/1pantalonPortada.jpg);
+    background-image: url(../assets/pantalonmarron1.jpeg);
   }
   
   .article__accesorios {
     @include cardcover420;
-    background-image: url(../../assets/1accesoriosPortada.jpg);
+    background-image: url(../assets/buzo1.jpg);
   }
 }
