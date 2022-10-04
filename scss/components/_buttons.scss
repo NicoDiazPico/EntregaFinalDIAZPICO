@@ -10,7 +10,9 @@
   align-items: center;
   background-color:$color-celeste;
   height: 3em;
-  width: 12em;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
   margin: 16px;
   border-radius: 16px;
     & a {
