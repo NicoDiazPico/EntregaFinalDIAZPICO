@@ -25,7 +25,6 @@
 
 .contacto__form__area{
   display: flex;
-  
   margin: 0 auto;
   width: 80%;
   background-color: $color-fondo;
@@ -36,8 +35,13 @@
 }
 
 .botonEnviar{
+  display: flex;
+  margin: 0 auto;
+  background-color: $color-azul;  
   width: 8rem;
   height: 2rem;
+  border-style: hidden;
+  border-radius: 8px;
 }
 
 

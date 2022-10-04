@@ -315,8 +315,13 @@ h1 a:hover {
 }
 
 .botonEnviar {
+  display: flex;
+  margin: 0 auto;
+  background-color: #719BAD;
   width: 8rem;
   height: 2rem;
+  border-style: hidden;
+  border-radius: 8px;
 }
 
 @media screen and (min-width: 420px) {
@@ -565,7 +570,7 @@ h1 a:hover {
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-rows: 2fr 1fr 1fr;
-  height: 60vh;
+  height: 70vh;
   gap: 10px;
   margin: 10px;
 }
@@ -670,7 +675,7 @@ h1 a:hover {
     display: grid;
     grid-template-columns: 60% 5% auto;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 60vh;
+    height: 80vh;
     gap: 10px;
     margin: 10px;
   }
@@ -722,7 +727,7 @@ h1 a:hover {
   overflow: hidden;
 }
 
-.carouselboot__conteiner img {
+.carousel-item img {
   width: 100%;
   object-fit: cover;
   object-position: center;
