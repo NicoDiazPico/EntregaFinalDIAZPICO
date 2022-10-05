@@ -29,13 +29,12 @@
     box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
     display: flex;
     overflow: hidden;
-  }
-  
-  .carouselboot__conteiner img {
+        & img{
     width:100%;
     object-fit: cover;
     object-position:center;
-  }
+    }
+}
 
 .conteiner__botones {
     display: flex;
@@ -59,19 +58,17 @@
     text-align: center;
     padding: 5px;
     border-radius: 7px;
-}
-
-.guiatalles__table{
+        &__table{
     border-color:$color-font;
     border-width: 2px;
     text-align: start;
     font-size: xx-small;
     font-weight: 100;
-}
-
-.guiatalles__table td, th{
-    border-color:$color-font;
-    border-width: 1px;
+            td, th{
+            border-color:$color-font;
+            border-width: 1px;
+        }
+    }
 }
 
 .pulmon {
@@ -87,7 +84,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-}
+    }
 
 .conteiner {
     display: grid;
@@ -103,10 +100,8 @@
     grid-row: 1/4;
     }
 
-    .conteiner__botones {
-     
-        grid-column: 3/4;
-     
+.conteiner__botones {
+    grid-column: 3/4;
     }
 
 .guiatalles {
@@ -125,3 +120,5 @@
     width: 65%;
     }
 }
+
+//Carousel traido de bootstrap para mostrar aprendizaje del alumno y mostrar diferencia entre tal y el hecho con CSS
