@@ -152,20 +152,25 @@ body {
   background-color: #252525;
 }
 .footer__list {
+  padding: 0 1em;
+}
+.footer__list a {
   list-style: none;
   font-size: 1em;
   font-weight: 400;
-}
-.footer__list a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .footer__avisoslegales {
+  font-size: 1em;
+  font-weight: 400;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .footer__textoLegales {
+  text-align: justify;
   font-size: 0.7em;
   font-weight: 100;
   color: #FFFFFF;
@@ -177,7 +182,7 @@ body {
     justify-content: center;
   }
   .footer__list {
-    width: 55%;
+    width: 80%;
   }
 }
 /*@import"./layout/header";*/
@@ -331,11 +336,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 32px;
+  height: 44px;
   background-color: #719BAD;
   margin-top: 10px;
 }
 .socialNetworks__conteiner a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0;
+}
+
+.socialNetworks__conteiner i {
+  font-size: 24px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -344,15 +356,16 @@ body {
   list-style: none;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 480px) {
   .socialNetworks__conteiner {
     height: 40px;
     justify-content: center;
     gap: 2rem;
   }
-  .socialNetworks__conteiner a {
+  .socialNetworks__conteiner a, .socialNetworks__conteiner i {
+    font-size: 20px;
     font-weight: 400;
-    color: black;
+    color: #252525;
   }
 }
 .contacto {
