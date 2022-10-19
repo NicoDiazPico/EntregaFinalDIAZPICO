@@ -1,0 +1,162 @@
+/*NAVBAR MOBILE*/
+
+.conteiner_LogoHam {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$color-fondo;
+}
+
+.logo_name {
+    display: flex;
+    gap:8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo_name h1 {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: $color-font;
+}
+
+.logo_name img {
+    height: 2rem;
+    width: auto;
+}
+
+
+/*BOTÓN HAMBURGUESA*/
+
+.hambutton{
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-color: $color-font;
+    border-width: 2px;
+    border-radius: 4px;
+    &__nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 17.5%;
+        /*No cambiar este color*/
+        background-color: rgba(0, 0, 0, 0);
+        border-style: none;
+        cursor: pointer;
+            & span{
+            margin: 0 auto;
+            height: 10%;
+            width: 80%;
+            background-color: $color-font;
+            border-radius: 5%;
+            transition: all 1.5s;
+        }
+    }
+}
+
+.activehambutton__nav__bar1{
+    transform:translateX(-3rem);
+    opacity: 0;
+}
+
+.activehambutton__nav__bar2{
+    transform:translateX(-3rem);
+    opacity: 0;
+}
+
+.activehambutton__nav__bar3{
+    transform:translateX(-3rem);
+    opacity: 0;
+}
+
+
+/*MENU DESPLEGABLE*/
+
+.menu__escrito{
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    right:-10rem;
+    top: 4rem;
+    width: 8rem;
+    height: 16rem;
+        /*COLOR A CAMBIAR*/
+    background-color: $color-tarjetas;
+    box-shadow:$shadow;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+        &.active{
+        right: 0;
+    }
+}
+
+.menu__escrito li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    font-size: larger;
+}
+
+.menu__escrito :hover{
+    background-color:$color-celeste;
+    transition: 1s;
+}
+
+
+/*////////FOR > 720px////////*/
+
+@media screen and (min-width:720px) {
+
+.hambutton{
+    display: none;
+}
+
+.menu__escrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    right: 16px;
+    top: inherit;
+    width: 45%;
+    height: inherit;
+    background-color: transparent;
+    box-shadow: none;
+    cursor:auto;
+    transition: all 1s ease-in-out;
+
+}
+
+.menu__escrito li{
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__escrito :hover{
+        /*COLOR y EFECTO A CAMBIAR*/
+    color: $color-azul;
+    background: transparent;
+    transform: scale(1.02);
+    transition: 0.5s;
+    }
+}
+
+
+/*////////FOR > 1000px////////*/
+
+
+@media screen and (min-width:1000px) {
+.menu__escrito {
+    width: 35%;
+    }
+}

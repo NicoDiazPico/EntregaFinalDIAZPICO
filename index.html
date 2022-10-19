@@ -6,51 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./cssstyles/bootstrap.min.css">
-    <link rel="stylesheet" href="./cssstyles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <meta name="description" content="Remeras básicas, pantalones y buzos con la mejor calidad">
     <title>Ropa basica y lisos || Nothing Basic</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./assets/logo1.png" alt="logo">
-            <h1><a href="index.html">Nothing Basic!!</a></h1>
-        </div>
+        <div class="conteiner_LogoHam">
+            <div class="logo_name">
+                    <a href="./index.html">
+                        <img src="./assets/logo1.png" alt="LOGO"></a>
+                        <h1>Nothing Basic!</h1>
+                    </a>
+                </div>
+            </a>
 
-
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__navbuttons"><a href="./pages/page2.html">Remeras</a></li>
-                <li class="header__navbuttons"><a href="./pages/page3.html">Pantalones</a></li>
-                <li class="header__navbuttons"><a href="./pages/page4loc.html">Showroom</a></li>
-                <li class="header__navbuttons__con"><a href="./pages/page5con.html">Contacto</a></li>
+            <div class="hambutton">
+                <button class="hambutton__nav" type="button">
+                    <span class="hambutton__nav__bar1"></span>
+                    <span class="hambutton__nav__bar2"></span>
+                    <span class="hambutton__nav__bar3"></span>
+                </button>
+            </div>
+    
+            <ul class="menu__escrito">
+                <li><a href="./pages/page2.html">Remeras</a></li>
+                <li><a href="./pages/page3.html">Pantalones</a></li>
+                <li><a href="./pages/page3.html">Buzos</a></li>
+                <li><a href="./pages/page4loc.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
 
     <main>
         <div class="cover__conteiner">
             <div class="cover">
-                <p class="cover__text">
+                <h2 class="cover__text">
                     Solo los basicos respetan tu estilo
-                </p>
+                </h2>
             </div>
         </div>
 
+
         <section class="article__products">
-            <div class="article__remeras">
-                <div class="article__text"><a href="./pages/page2.html">Remeras</a></div>
+
+            <div class="article__products__conteiner">
+                <div class="article__remeras">
+                    <div class="article__title">
+                        <a href="./pages/page2.html">Remeras</a>
+                    </div>
+                </div>
+                <p class="article__text">Solo nosotros podemos darte las remeras con la mejor calidad y todos los colores de moda en esta temporada</p>
             </div>
 
-            <div class="article__pantalones">
-                <div class="article__text"><a href="./pages/page3.html">Pantalones</a></div>
+            <div class="article__products__conteiner">
+                <div class="article__pantalones">
+                    <div class="article__title">
+                        <a href="./pages/page3.html">Pantalones</a>
+                    </div>
+                </div>
+                <p class="article__text">Te ofrecemos los pantalones más cómodos y con el mejor calce, que se adaptan siempre a tu cuerpo</p>
             </div>
 
-            <div class="article__accesorios">
-                <div class="article__text">Buzos</div>
+            <div class="article__products__conteiner">
+                <div class="article__accesorios">
+                    <div class="article__title">Buzos</div>
+                </div>
+                <p class="article__text">Con y sin friza, para darte solución a noches de verano como a frios días de invierno, siempre con la mejor calidad</p>
             </div>
+
         </section>
 
         <Section>
@@ -79,6 +105,7 @@
         </div>
     </footer>
 
+    <script src="./js/scrip.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

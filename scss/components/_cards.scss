@@ -1,5 +1,5 @@
 //Tarjetas para la page INDEX
-.article__products {
+.article__products{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,69 +11,104 @@
   }
 }
 
+.article__products__conteiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 8px 0px;
+  background-color: $color-tarjetas;
+  border-radius: 8px;
+    & :hover {
+    box-shadow: none;
+  }
+}
+
 @mixin cardcover{
   display: flex;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   height: 200px;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
     & :hover{
     transition: 1s;
-    background-color:whitesmoke;
+    background-color:$color-tarjetas;
   }
 }
 
-.article__text{
+.article__title{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   width: 100%;
-  background-color:rgba(245, 245, 245, 0.464);
+  background-color:#fff9f2a4;
   font-size: 28px;
   font-weight: 600;
-  text-shadow: 0px 0px 10px #f6f6f6;
     & a{
     text-decoration: none;
     color:$color-font;
   }
 }
 
+.article__text{
+  margin: 1em;
+  text-align: justify;
+}
 
-//for >420 px
 
-@media screen and (min-width: 420px){
+//For >480 px
+
+@media screen and (min-width: 480px){
 
 .article__products {
   font-weight: 400;
   margin-top: 20px;
-}
-}
+  }
 
-@mixin cardcover420{
-  display: flex;
-  border-radius: 16px;
-  height: 48vh;
-  min-height: 320px;
-  max-height: 400px;
-  width: 40vw;
-  min-width: 200px;
-  max-width: 320px;
-  margin: 16px;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  &:hover{
-    transition: 1s;
-    box-shadow:$shadow;
+  .article__products__conteiner{
+  flex-direction: row;
+  }
+
+.article__text{
+  width: 60%;
   }
 }
+
+@mixin cardcover480{
+  height: 35vh;
+  width: 100%;
+}
+
+
+//For > 720 px
+
+@media screen and (min-width: 720px){
+
+  .article__products__conteiner{
+  max-width: 40%;
+  margin: 1em;
+  }
+
+.article__text{
+  width: 80%;
+  }
+}
+
+@mixin cardcover720{
+  width: 40vw;
+}
+
+
+
+
+
+
+
 
 
 //For pages 2 and 3
