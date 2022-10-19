@@ -8,7 +8,7 @@
     background-color:$color-fondo;
 }
 
-.logo_name {
+.logo_name a {
     display: flex;
     gap:8px;
     align-items: center;
@@ -115,6 +115,8 @@
 
 @media screen and (min-width:720px) {
 
+
+
 .hambutton{
     display: none;
 }
@@ -123,7 +125,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    position:inherit;
     right: 16px;
     top: inherit;
     width: 45%;
