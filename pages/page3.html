@@ -5,67 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../cssstyles/bootstrap.min.css">
-    <link rel="stylesheet" href="../cssstyles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Los mejores pantalones de moda || Nothing Basic</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="../assets/logo1.png" alt="logo">
-            <h1><a href="../index.html">Nothing Basic!!</a></h1>
-        </div>
+        <div class="conteiner_LogoHam">
+            <div class="logo_name">
+                <a href="../index.html">
+                    <img src="../assets/logo1.png" alt="LOGO">
+                    <h1>Nothing Basic!</h1>
+                </a>
+            </div>
+            
 
-
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__navbuttons"><a href="./page2.html">Remeras</a></li>
-                <li class="header__navbuttons"><a href="./page3.html">Pantalones</a></li>
-                <li class="header__navbuttons"><a href="./page4loc.html">Showroom</a></li>
-                <li class="header__navbuttons__con"><a href="./page5con.html">Contacto</a></li>
+            <div class="hambutton">
+                <button class="hambutton__nav" type="button">
+                    <span class="hambutton__nav__bar1"></span>
+                    <span class="hambutton__nav__bar2"></span>
+                    <span class="hambutton__nav__bar3"></span>
+                </button>
+            </div>
+    
+            <ul class="menu__escrito">
+                <li><a href="../pages/page2.html">Remeras</a></li>
+                <li><a href="../pages/page3.html">Pantalones</a></li>
+                <li><a href="../pages/page3.html">Buzos</a></li>
+                <li><a href="../pages/page4loc.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <main>
         <section class="shirts">
-            <div class="article__shirts"><a href="./page7pants.html">
-                <h3>Pantalón 1</h3>
-                <img src="../assets/pantalonmarron1.jpeg" alt="Pantalon Chino">
-                <p>Pantalón chino, de vestir, para darte toda la formalidad.</p></a>
+            <div class="article__shirts">
+                <a href="./page7pants.html">
+                <h3>✰ Pantalón chino ✰</h3>
+                <div class="article__shirt__imagen"><img src="../assets/pantalonmarron1.jpeg" alt="Pantalon Chino">
+                </div>
+                <p>$$ 12.000 $$</p>
+                </a>
             </div>
 
             <div class="article__shirts">
-                <h3>Pantalón 2</h3>
+                <a href="#">
+                <h3>✰ Pantalón jogging ✰</h3>
+                <div class="article__shirt__imagen">
                 <img src="../assets/pantalonazul1.jpeg" alt="Pantalón azul">
-                <p>Pantalón jogging azul, con toda la comodidad.</p>
+                </div>
+                <p>Sin stock.</p>
+                </a>
             </div>
 
             <div class="article__shirts">
-                <h3>Pantalón 3</h3>
+                <a href="#">
+                <h3>✰ Pantalón Jeans ✰</h3>
+                <div class="article__shirt__imagen">
                 <img src="../assets/pantalonjean1.jpeg" alt="Pantalon3">
-                <p>Jeans, con toda la versatilidad que imaginas.</p>
+                </div>
+                <p>Sin stock.</p>
+                </a>
             </div>
 
             <div class="article__shirts">
-                <h3>Pantalón 4</h3>
-                <img src="../assets/pantalonnegro1.jpeg" alt="Pantalon4">
-                <p>Jeans negro, con la elegancia única de ese color.</p>
+                <a href="#">
+                <h3>✰ Pantalón Jeans ✰</h3>
+                <div class="article__shirt__imagen">
+                <img src="../assets/pantalonnegro1.jpeg" alt="Pantalon4"></div>
+                <p>Sin stock.</p>
+                </a>
             </div>
+
         </section>
 
         <section class="conteiner__botonShowroom">
             <div class="botonShowroom"><a href="page4loc.html">SHOWROOM!!!</a></div>
         </section>
 
-        <Section class="socialNetworks">
+        <Section>
             <ul class="socialNetworks__conteiner">
-                <li class="socialNetworks__list"><a href="https://web.whatsapp.com/">
+                <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i>
                         WhatsApp</a></li>
-                <li class="socialNetworks__list"><a href="https://www.instagram.com/">
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
                         Instagram</a></li>
-                <li class="socialNetworks__list"><a href="https://www.facebook.com">
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i>
                         Facebook</a></li>
             </ul>
         </Section>
@@ -75,15 +99,18 @@
         <div class="footer">
             <ul class="footer__list">
                 <li><a href="../pages/page5con.html">Contacto</a></li>
-                <li><a href="../pages/page4loc.html">Showrooms</a></li>
+                <li><a href="../pages/page4loc.html">Términos y condiciones de compra</a></li>
                 <li class="footer__avisoslegales">Avisos Legales:</li>
-                <span class="footer__textoLegales">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse
-                    officiis facere dolorum, suscipit assumenda eius deserunt necessitatibus pariatur, atque voluptas
-                    sit mollitia facilis nesciunt officia, dolorem molestias ducimus architecto.</span>
+                    <p class="footer__textoLegales">La presente página corresponde a un trabajo práctico realizado por el alumno Díaz Picó, Nicolás; para el curso Desarrollo Web, de la plataforma CoderHouse y de ningún modo corresponde a una oferta verdadera de compra.</p>
+                    <p class="footer__textoLegales">La dirección utilizada en la pestaña "ubicación" en falsa y cualquier molestia a vecinos de la zona podría infringir leyes vecinales, cuya responsabilidad quedará en manos de quién las realice.</p>
+                    <p class="footer__textoLegales">No serán contestados mails o mensajes enviados en el formulario. Tampoco serán consideradas como ofertas de compra".</p>
             </ul>
         </div>
-
     </footer>
+
+    <script src="../js/scrip.js"></script>
+    <script src="https://kit.fontawesome.com/cdb5ebeae8.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

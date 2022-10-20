@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  width: 100%;
   margin-top: 16px;
 }
 
@@ -11,6 +12,6 @@
 
 @include botonshowroom;
 
-@media screen and (min-width: 420px){
-  @include cardproduct420;
+@media screen and (min-width: 500px){
+  @include cardproduct500;
 }

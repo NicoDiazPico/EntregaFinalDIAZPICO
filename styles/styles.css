@@ -150,6 +150,7 @@ body {
 }
 .footer {
   background-color: #252525;
+  margin: 0;
 }
 .footer__list {
   padding: 0 1em;
@@ -199,13 +200,13 @@ body {
 
 .logo_name a {
   display: flex;
+  text-decoration: none;
   gap: 8px;
   align-items: center;
   cursor: pointer;
 }
 
 .logo_name h1 {
-  text-decoration: none;
   font-size: 1.7rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
@@ -271,7 +272,6 @@ body {
   top: 4rem;
   width: 8rem;
   height: 16rem;
-  /*COLOR A CAMBIAR*/
   background-color: #FFFFFF;
   box-shadow: 0 0 1rem 0 rgba(100, 100, 100, 0.7);
   cursor: pointer;
@@ -288,6 +288,10 @@ body {
   width: 100%;
   height: 25%;
   font-size: larger;
+}
+.menu__escrito li a {
+  text-decoration: none;
+  color: #252525;
 }
 
 .menu__escrito :hover {
@@ -335,6 +339,7 @@ body {
   }
 }
 .socialNetworks__conteiner {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -356,6 +361,7 @@ body {
 
 .socialNetworks__conteiner li {
   list-style: none;
+  line-height: 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -415,18 +421,25 @@ body {
   height: 2rem;
   border-style: hidden;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 420px) {
   .contacto__form {
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+    height: 500px;
   }
 }
+.page4title {
+  margin: 24px;
+  text-align: center;
+  color: #252525;
+}
+
 .conteiner__maps {
-  height: 450px;
+  height: 500px;
   margin: 20px;
-  border-color: black;
+  border-color: #252525;
   border-style: solid;
   border-width: 2px;
 }
@@ -434,6 +447,12 @@ body {
   width: 100%;
 }
 
+/*///FOR > 720 px///*/
+@media screen and (min-width: 720px) {
+  .conteiner__maps {
+    width: 100%;
+  }
+}
 .article__remeras {
   display: flex;
   background-size: cover;
@@ -519,30 +538,41 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  width: 100%;
   margin-top: 16px;
 }
 
 .article__shirts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
-  height: 35vh;
-  width: 40%;
+  height: 40vh;
+  width: 65vw;
   background-color: #FFFFFF;
   margin: 8px;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
-  overflow: hidden;
 }
 .article__shirts:hover {
   transition: 1s;
   box-shadow: 0 0 1rem 0 rgba(100, 100, 100, 0.7);
 }
 
-.article__shirts img {
+.article__shirt__imagen {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.article__shirt__imagen img {
+  width: 100%;
+  height: 36vh;
   object-fit: cover;
   object-position: center;
-  height: 75%;
-  width: 100%;
 }
 
 .article__shirts h3 {
@@ -583,7 +613,8 @@ body {
 .botonShowroom a {
   text-decoration: none;
   color: #252525;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .botonShowroom:hover {
@@ -592,10 +623,10 @@ body {
   box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 500px) {
   .article__shirts {
-    height: 60vh;
-    width: 40vw;
+    height: 100%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     min-width: 220px;
@@ -603,8 +634,13 @@ body {
     margin: 15px;
   }
   .article__shirts img {
-    height: 80%;
-    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+@media screen and (min-width: 720px) {
+  .page4responsive {
+    display: flex;
   }
 }
 .texto__RemeraNegra {
@@ -680,7 +716,8 @@ body {
 .botonShowroom a {
   text-decoration: none;
   color: #252525;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .botonShowroom:hover {
@@ -821,7 +858,8 @@ body {
 .botonShowroom a {
   text-decoration: none;
   color: #252525;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .botonShowroom:hover {

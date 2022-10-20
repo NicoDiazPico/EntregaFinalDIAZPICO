@@ -1,5 +1,6 @@
 /*NAVBAR MOBILE*/
 
+
 .conteiner_LogoHam {
     display: flex;
     margin: 0 auto;
@@ -12,13 +13,13 @@
 
 .logo_name a {
     display: flex;
+    text-decoration: none;
     gap:8px;
     align-items: center;
     cursor: pointer;
 }
 
 .logo_name h1 {
-    text-decoration: none;
     font-size: 1.7rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
@@ -88,7 +89,6 @@
     top: 4rem;
     width: 8rem;
     height: 16rem;
-        /*COLOR A CAMBIAR*/
     background-color: $color-tarjetas;
     box-shadow:$shadow;
     cursor: pointer;
@@ -105,6 +105,10 @@
     width: 100%;
     height: 25%;
     font-size: larger;
+    & a{
+        text-decoration: none;
+        color: $color-font;
+    }
 }
 
 .menu__escrito :hover{

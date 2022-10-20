@@ -1,5 +1,6 @@
 //For mobile
 .socialNetworks__conteiner{
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -20,7 +21,8 @@
 }
 
 .socialNetworks__conteiner li{
-    list-style: none;
+  list-style: none;
+  line-height: 0;
 }
 
 //For > 480px

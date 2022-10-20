@@ -1,10 +1,27 @@
+.page4title{
+  margin: 24px;
+  text-align: center;
+  color: $color-font
+}
+
 .conteiner__maps {
-  height: 450px;
+  height: 500px;
   margin: 20px;
-  border-color: black;
+  border-color: $color-font;
   border-style: solid;
   border-width: 2px;
     &__ancho {
     width: 100%;
+  }
+}
+
+
+
+/*///FOR > 720 px///*/
+
+@media screen and (min-width:720px) {
+
+.conteiner__maps{
+  width: 100%;
   }
 }
