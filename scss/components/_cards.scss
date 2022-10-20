@@ -117,10 +117,11 @@
 .article__shirts {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
-  height: 400px;
-  width: 280px;
+  height: 45%;
+  width: 60%;
   background-color:$color-tarjetas;
   margin: 8px;
   text-align: center;
@@ -133,11 +134,11 @@
   }  
 
 .article__shirt__imagen{
-  height: 360px;
-  width: 280px;
+  height: 80%;
+  width: 100%;
     & img {
-    height: 360px;
-    width: 280px;
+    height: 100%;
+    width: 100%;
     object-position: center;
     object-fit: cover;
   }
