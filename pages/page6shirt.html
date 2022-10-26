@@ -47,17 +47,47 @@
         <div class="superconteiner">
             <div class="conteiner">
 
-                <div class="slider-conteiner">
-                    <img class="slider-item" src="../assets/remerablanca1.jpg" alt="Remera Blanca 1">
-                    <img class="slider-item" src="../assets/remerablanca2.jpg" alt="Remera Blanca 2">
-                    <img class="slider-item" src="../assets/remerarosa1.jpg" alt="Remera Blanca 3">
+                <div class="carousel">
+                    
+                    <div class="carousel__track-conteiner">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="../assets/remerablanca1.jpg" alt="Remera blanca sin estampado">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="../assets/remerablanca2.jpg" alt="Remera blanca sin estampado">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="../assets/remeragris1.jpg" alt="Remera blanca sin estampado">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carousel__button carousel__button--left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <button class="carousel__button carousel__button--right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+
                 </div>
+
+
+
+
 
                 <div class="pulmon"></div>
 
                 <div class="conteiner__botones">
                     <div class="botonShowroom"><a href="./page4loc.html">Showroom</a></div>
-                    <div class="botonShowroom"><a href="./page5con.html">Como comprar?</a></div>
+                    <div class="botonShowroom"><a href="./page5con.html">Comprar!!</a></div>
                 </div>
 
                 <aside class="guiatalles">
@@ -115,6 +145,7 @@
     </footer>
 
     <script src="../js/scrip.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="https://kit.fontawesome.com/cdb5ebeae8.js" crossorigin="anonymous"></script>
 
 </body>

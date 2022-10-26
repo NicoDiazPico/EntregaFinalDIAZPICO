@@ -22,23 +22,23 @@
     margin: 10px;
 }
 
-@include slider;
+@include slider__conteiner;
 
 .conteiner__botones {
     display: flex;
     flex-direction: column;
     grid-column: 1/2;
+    grid-row: 3/4;
     width: fit-content;
     justify-content: center;
 }
 
 @include botonshowroom;
 
-.guiatalles {
+.guiatalles{
     display: flex;
     flex-direction: column;
     background-color:$color-tarjetas;
-    box-shadow:$shadow;
     grid-column: 2/3;
     grid-row: 3/4;
     font-size: 14px;
@@ -62,8 +62,8 @@
 }
 
 .pulmon {
-    grid-column: 2/3;
-    grid-row: 1/4;
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 
@@ -83,9 +83,15 @@
     height: 80vh;
     gap: 10px;
     margin: 10px;
+    width: 100%;
 }
 
-@include slider420;
+@include slider__conteiner420;
+
+.pulmon {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
 
 .guiatalles {
     grid-column: 3/4;
@@ -97,6 +103,7 @@
 
 .conteiner__botones {
     grid-column: 3/4;
+    grid-row: 3/4;
     }
 
 
