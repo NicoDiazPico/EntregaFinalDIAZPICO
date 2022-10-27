@@ -645,7 +645,7 @@ body {
   align-content: center;
   width: fit-content;
   padding: 8px;
-  margin: 16px;
+  margin: 0 auto;
   height: 32px;
   background-color: #FFFFFF;
   border-radius: 8px;
@@ -657,10 +657,11 @@ body {
 
 .conteiner {
   display: grid;
+  gap: 8px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 55% 10% auto;
-  height: 100;
-  width: 100%;
+  grid-template-rows: 2fr 1fr;
+  height: 65vh;
+  max-width: 100%;
   margin: 10px;
 }
 
@@ -692,7 +693,7 @@ body {
 
 .guiatalles {
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 2/3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -705,6 +706,10 @@ body {
 .guiatalles:hover {
   box-shadow: 0 0 1rem 0 rgba(100, 100, 100, 0.7);
   transition: 1s;
+}
+
+.guiatalles table {
+  border-spacing: 8px;
 }
 
 .guiatalles p {
@@ -722,16 +727,11 @@ body {
   font-weight: 100;
 }
 
-.pulmon {
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
 .conteiner__botones {
   display: flex;
   flex-direction: column;
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 2/3;
   width: fit-content;
   justify-content: center;
 }
@@ -774,31 +774,29 @@ body {
   }
   .conteiner {
     display: grid;
-    grid-template-columns: 60% 5% auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 80vh;
-    gap: 10px;
-    margin: 10px;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 60% auto;
+    height: 60vh;
     width: 100%;
+    margin: 10px;
   }
-  .carousel {
+  .slider-conteiner {
     grid-column: 1/2;
-    grid-row: 1/4;
-  }
-  .pulmon {
-    grid-column: 2/3;
-    grid-row: 1/4;
+    grid-row: 1/3;
   }
   .guiatalles {
-    grid-column: 3/4;
-    grid-row: 1/3;
+    grid-column: 2/3;
+    grid-row: 1/2;
     font-size: 14px;
     font-weight: 600;
   }
+  .guiatalles table {
+    border-spacing: 16px;
+  }
 }
 .conteiner__botones {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 @media screen and (min-width: 800px) {

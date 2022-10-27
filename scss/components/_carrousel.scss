@@ -34,8 +34,8 @@
 //For > 420px
 
 @mixin slider__conteiner420 {
-    .carousel {
+    .slider-conteiner {
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-row: 1/3;
     }
 }
