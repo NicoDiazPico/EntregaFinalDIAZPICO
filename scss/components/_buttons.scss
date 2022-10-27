@@ -26,6 +26,6 @@
 .botonShowroom:hover{
   transition: 1s;
   background-color: $color-azul;
-  box-shadow: 2px 2px 5px 0px rgb(150, 150, 150);
+  box-shadow: $shadow;
   }
 }
